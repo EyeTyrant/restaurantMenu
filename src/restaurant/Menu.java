@@ -1,6 +1,7 @@
 package restaurant;
 
 import java.util.ArrayList;
+import java.lang.Object;
 
 public class Menu{
 

@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class MenuItem extends Menu {
 
-   static String category;
+  static String category;
   private static String name;
   private static String description;
   private static Double price;
@@ -15,9 +15,9 @@ public class MenuItem extends Menu {
 
     public void displayItem(){
       if (isNew){
-        System.out.println(name + "   !! NEW ITEM !! \n" + description + "\n$ " + price + "\n");
+        System.out.println("\n" + name + "   !! NEW ITEM !! \n" + description + "\n$ " + price);
       }else {
-        System.out.println(name + "\n" + description + "\n$ " + price + "\n");
+        System.out.println("\n" + name + "\n" + description + "\n$ " + price);
       }
     }
 
