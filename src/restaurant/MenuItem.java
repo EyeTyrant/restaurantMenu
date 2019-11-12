@@ -11,7 +11,6 @@ public class MenuItem {
   private Boolean isNew;
   private Date today = new Date();
 
-  private String st;
 
   public void displayItem(){
     System.out.println (name + "\n" + description + "\n" + price);
