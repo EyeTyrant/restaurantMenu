@@ -1,20 +1,30 @@
 package restaurant;
 
+import java.util.Arrays;
 import java.util.Date;
 
-public class MenuItem {
+public class MenuItem extends Menu {
 
-  private String category;
-  private String name;
-  private String description;
-  private Double price;
-  private Boolean isNew;
+   static String category;
+  private static String name;
+  private static String description;
+  private static Double price;
+  private static Boolean isNew;
   private Date today = new Date();
 
 
-  public void displayItem(){
-    System.out.println (name + "\n" + description + "\n" + price);
-  }
+    public void displayItem(){
+      if (isNew){
+        System.out.println(name + "   !! NEW ITEM !! \n" + description + "\n$ " + price + "\n");
+      }else {
+        System.out.println(name + "\n" + description + "\n$ " + price + "\n");
+      }
+    }
+
+
+
+
+
 //  public Boolean isNew(Date date){
 //    if (today < today){
 //      return true;
