@@ -8,9 +8,11 @@ public class Restaurant {
 
     MenuItem Wings = new MenuItem("Appetizer", "Hot Wings", "A dozen wings smothered in our spicy sauce.", 4.99, true);
     Wings.addItem(Wings);
+    Wings.displayItem();
 
     MenuItem Fries = new MenuItem("Appetizer", "French Fries", "Yummy taters fried in the same \ngrease we use for our fish.", 2.99, false);
     Fries.addItem(Fries);
+    Fries.displayItem();
 
 
     System.out.println(Menu.appetizers); // prints memory location instead of array
