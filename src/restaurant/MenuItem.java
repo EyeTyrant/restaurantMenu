@@ -3,7 +3,7 @@ package restaurant;
 import java.util.Arrays;
 import java.util.Date;
 
-public class MenuItem extends Menu {
+public class MenuItem {
 
   static String category;
   private static String name;
@@ -12,6 +12,14 @@ public class MenuItem extends Menu {
   private static Boolean isNew;
   private Date today = new Date();
 
+// constructor
+  public MenuItem(String category, String name, String description, Double price, Boolean isNew) {
+    this.category = category;
+    this.name = name;
+    this.description = description;
+    this.price = price;
+    this.isNew = isNew;
+  }
 
     public void displayItem(){
       if (isNew){
@@ -33,13 +41,6 @@ public class MenuItem extends Menu {
 
 
 
-  public MenuItem(String category, String name, String description, Double price, Boolean isNew) {
-    this.category = category;
-    this.name = name;
-    this.description = description;
-    this.price = price;
-    this.isNew = isNew;
-  }
 
   public String getCategory() {
     return category;

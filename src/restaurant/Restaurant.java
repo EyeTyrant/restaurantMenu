@@ -9,11 +9,11 @@ public class Restaurant {
 
 
     MenuItem Fries = new MenuItem("appetizer", "French Fries", "Yummy taters fried in the same \ngrease we use for our fish.", 2.99, false);
-    Fries.addItem(Fries);
-    Fries.displayItem();
+    Menu.addItem(Fries);
+//    Fries.displayItem();
     MenuItem Wings = new MenuItem("appetizer", "Hot Wings", "A dozen wings smothered in our spicy sauce.", 4.99, true);
-    Wings.addItem(Wings);
-    Wings.displayItem();
+    Menu.addItem(Wings);
+//    Wings.displayItem();
 
     MenuItem Skins = new MenuItem("appetizer", "Potato Skins", "Dry tater halves topped with oily \ncheese, greasy bacon, and sour cream.", 2.99, true);
     MenuItem Steak = new MenuItem("entree", "Bootsteak", "Overcooked fatty slab of beef that's as tough \nas a boot just like momma used to make.", 8.99, false);
