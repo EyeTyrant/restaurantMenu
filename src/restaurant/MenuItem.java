@@ -19,6 +19,8 @@ public class MenuItem {
     this.description = description;
     this.price = price;
     this.isNew = isNew;
+
+    // tried to place addItem() method here to automatically populate arraylist when instantiated.
   }
 
     public void displayItem(){

@@ -24,7 +24,7 @@ public class Restaurant {
     MenuItem Brownies = new MenuItem("dessert", "Brownie", "The best Sara Lee has to offer", 1.99, true);
 
 
-    System.out.println(Menu.appetizers); // prints memory location instead of array
+    System.out.println("\n" + Menu.appetizers); // prints memory location instead of array
 
 
 
