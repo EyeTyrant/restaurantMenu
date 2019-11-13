@@ -10,7 +10,7 @@ public class MenuItem {
   private static String description;
   private static Double price;
   private static Boolean isNew;
-  private Date today = new Date();
+
 
 // constructor
   public MenuItem(String category, String name, String description, Double price, Boolean isNew) {
