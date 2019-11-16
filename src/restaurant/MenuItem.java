@@ -1,8 +1,5 @@
 package restaurant;
 
-import java.util.Arrays;
-import java.util.Date;
-
 public class MenuItem {
 
   private String category;
@@ -30,19 +27,7 @@ public class MenuItem {
       }
     }
 
-
-
-
-
-//  public Boolean isNew(Date date){
-//    if (today < today){
-//      return true;
-//    }
-//  }
-
-
-
-
+// getters
   public String getCategory() {
     return category;
   }
@@ -63,6 +48,7 @@ public class MenuItem {
     return isNew;
   }
 
+// setters
   public void setCategory(String category) {
     this.category = category;
   }
@@ -84,15 +70,15 @@ public class MenuItem {
   }
 
 
-  @Override
-  public String toString() {
-    return "MenuItem{" +
-            "category='" + category + '\'' +
-            ", name='" + name + '\'' +
-            ", description='" + description + '\'' +
-            ", price=" + price +
-            ", isNew=" + isNew +
-            '}';
-  }
+//  @Override
+//  public String toString() {
+//    return "MenuItem{" +
+//            "category='" + category + '\'' +
+//            ", name='" + name + '\'' +
+//            ", description='" + description + '\'' +
+//            ", price=" + price +
+//            ", isNew=" + isNew +
+//            '}';
+//  }
 
 }

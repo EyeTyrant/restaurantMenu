@@ -1,63 +1,42 @@
 package restaurant;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Menu {
 
-  static ArrayList<MenuItem> appetizers = new ArrayList<MenuItem>();
-  static ArrayList<MenuItem> entrees = new ArrayList<MenuItem>();
-  static ArrayList<MenuItem> desserts = new ArrayList<MenuItem>();
+  static ArrayList<MenuItem> joesDinerMenu = new ArrayList<MenuItem>();
 //  private Date today = new Date();
 
-
-  public Menu(ArrayList<MenuItem> appetizer) {
-    this.appetizers = appetizer;
+// constructor
+  public Menu(ArrayList<MenuItem> joesDinerMenu) {
+    this.joesDinerMenu = joesDinerMenu;
   }
-
-  public static ArrayList<MenuItem> getAppetizers() {
-    return appetizers;
+// getter
+  public static ArrayList<MenuItem> getJoesDinerMenu() {
+    return joesDinerMenu;
   }
-
-  public static void setAppetizers(ArrayList<MenuItem> appetizers) {
-    Menu.appetizers = appetizers;
-  }
-
-  public static ArrayList<MenuItem> getEntrees() {
-    return entrees;
-  }
-
-  public static void setEntrees(ArrayList<MenuItem> entrees) {
-    Menu.entrees = entrees;
-  }
-
-  public static ArrayList<MenuItem> getDesserts() {
-    return desserts;
-  }
-
-  public static void setDesserts(ArrayList<MenuItem> desserts) {
-    Menu.desserts = desserts;
+// setter
+  public static void setJoesDinerMenu(ArrayList<MenuItem> joesDinerMenu) {
+    Menu.joesDinerMenu = joesDinerMenu;
   }
 
   public ArrayList<MenuItem> addItem(MenuItem item){
 
-      this.appetizers.add(item);
-  return this.appetizers;
+      this.joesDinerMenu.add(item);
+  return this.joesDinerMenu;
     // update and display the date
   }
+
   public void printMenu (){
-    for (MenuItem appetizer : appetizers) {
-      appetizer.displayItem();
+    for (MenuItem eachMenu: joesDinerMenu) {
+      eachMenu.displayItem();
     }
   }
-
 
   @Override
   public String toString() {
     return "Menu{" +
-            "appetizers=" + appetizers +
-            ", entrees=" + entrees +
-            ", desserts=" + desserts +
+            "appetizers=" + joesDinerMenu +
             '}';
   }
 }
