@@ -5,12 +5,11 @@ import java.util.Date;
 
 public class MenuItem {
 
-  static String category;
-  private static String name;
-  private static String description;
-  private static Double price;
-  private static Boolean isNew;
-
+  private String category;
+  private String name;
+  private String description;
+  private Double price;
+  private Boolean isNew;
 
 // constructor
   public MenuItem(String category, String name, String description, Double price, Boolean isNew) {
@@ -84,5 +83,16 @@ public class MenuItem {
     isNew = aNew;
   }
 
+
+  @Override
+  public String toString() {
+    return "MenuItem{" +
+            "category='" + category + '\'' +
+            ", name='" + name + '\'' +
+            ", description='" + description + '\'' +
+            ", price=" + price +
+            ", isNew=" + isNew +
+            '}';
+  }
 
 }
