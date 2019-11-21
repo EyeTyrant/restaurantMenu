@@ -4,9 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Menu {
-  LocalDate update = LocalDate.now();
+  private LocalDate update = LocalDate.now();
   static ArrayList<MenuItem> joesDinerMenu = new ArrayList<MenuItem>();
-//  private Date today = new Date();
 
 // constructor
   public Menu(ArrayList<MenuItem> joesDinerMenu) {
