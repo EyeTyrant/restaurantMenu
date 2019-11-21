@@ -8,6 +8,7 @@ public class MenuItem {
   private Double price;
   private Boolean isNew;
 
+
 // constructor
   public MenuItem(String category, String name, String description, Double price, Boolean isNew) {
     this.category = category;

@@ -1,9 +1,10 @@
 package restaurant;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Menu {
-
+  LocalDate update = LocalDate.now();
   static ArrayList<MenuItem> joesDinerMenu = new ArrayList<MenuItem>();
 //  private Date today = new Date();
 
@@ -21,22 +22,19 @@ public class Menu {
   }
 
   public ArrayList<MenuItem> addItem(MenuItem item){
-
+    // disallow duplicate items
+    if (!joesDinerMenu.contains(item)) {
       this.joesDinerMenu.add(item);
+    }
   return this.joesDinerMenu;
-    // update and display the date
   }
 
   public void printMenu (){
     for (MenuItem eachMenu: joesDinerMenu) {
       eachMenu.displayItem();
     }
+      System.out.println("Menu updated: " + update);
   }
 
-  @Override
-  public String toString() {
-    return "Menu{" +
-            "appetizers=" + joesDinerMenu +
-            '}';
-  }
+
 }

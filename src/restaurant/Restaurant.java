@@ -37,7 +37,11 @@ public class Restaurant {
     JanuaryMenu.addItem(Wings);
     JanuaryMenu.addItem(Pizza);
     JanuaryMenu.addItem(Cheesecake);
+    JanuaryMenu.addItem(Cheesecake);
     JanuaryMenu.printMenu();
+    janMenu.remove(Wings);
+    JanuaryMenu.printMenu();
+
 
 
 //    Pizza.displayItem();
