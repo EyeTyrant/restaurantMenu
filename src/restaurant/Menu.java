@@ -36,5 +36,4 @@ public class Menu {
       System.out.println("Menu updated: " + update);
   }
 
-
 }

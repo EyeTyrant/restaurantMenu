@@ -1,8 +1,6 @@
 package restaurant;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.lang.Object;
 
 public class Restaurant {
   public static void main(String[] args) {
@@ -41,8 +39,6 @@ public class Restaurant {
     JanuaryMenu.printMenu();
     janMenu.remove(Wings);
     JanuaryMenu.printMenu();
-
-
 
 //    Pizza.displayItem();
 //    Cheesecake.displayItem();
